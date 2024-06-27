@@ -1,6 +1,7 @@
 burger.onclick = function (){
-    onclickk.classList.toggle("onclick");
-    burger.classList.toggle("clicked");
+    openedmenu.classList.toggle("opened");
+    burger.classList.toggle("touched");
 }
+
 
 
