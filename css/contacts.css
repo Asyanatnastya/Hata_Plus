@@ -25,10 +25,11 @@ sup {
     font-size: 0.6em;
 }
 
-header{
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.header-info{
+
+.header-info {
     margin-bottom: 40px;
 }
 
@@ -79,7 +80,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items:flex-start
+    align-items: flex-start
 }
 
 .map {
@@ -119,16 +120,17 @@ form {
 
 .row {
     display: flex;
-   gap: 10px;
+    gap: 10px;
     flex-wrap: wrap;
 
 }
 
 .row p {
     flex-grow: 1;
-} 
+}
+
 .phenefield,
-.namefield{
+.namefield {
     width: 100%;
 }
 
@@ -180,13 +182,14 @@ textarea {
     border: 1.5px #fd8300 solid;
     transition: .3s;
 }
-.button+label:hover{
-background-color: #fff;
-color: #fd8300;
-border: 1.5px #fd8300 solid;
+
+.button+label:hover {
+    background-color: #fff;
+    color: #fd8300;
+    border: 1.5px #fd8300 solid;
 }
 
-.last{
+.last {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -197,15 +200,16 @@ border: 1.5px #fd8300 solid;
     display: flex;
     align-items: center;
     column-gap: 10px;
-   text-align: center;
+    text-align: center;
     width: 100%;
 
 }
-.checkbox label{
+
+.checkbox label {
     font-size: 13px;
-line-height: 21px;
-color: #666;
-font-family: "Arial";
+    line-height: 21px;
+    color: #666;
+    font-family: "Arial";
 }
 
 .checkbox input {
@@ -239,42 +243,48 @@ font-family: "Arial";
     border-top: none;
     rotate: 45deg;
 }
+
 @media screen and (min-width:600px) {
     form {
-         width: 48%;
-    }
-    .map {
-    width: 49%;
-    
+        width: 48%;
     }
 
-    .last{
+    .map {
+        width: 49%;
+
+    }
+
+    .last {
         display: block;
     }
- 
-    
-}
-@media screen and (min-width:1024px) {
-    
-    .phenefield,
-.namefield{
-    width: inherit;
-}
-.row{
-    flex-wrap: nowrap;
-}
-.last{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-.button+label{
-    margin: 0;
+
+
 }
 
-.checkbox{
-    width: 40%;
-    text-align: left;
-}
- 
+@media screen and (min-width:1024px) {
+
+    .phenefield,
+    .namefield {
+        width: inherit;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .button+label {
+        margin: 0;
+    }
+
+    .checkbox {
+        width: 40%;
+        text-align: left;
+    }
+
 }

@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -111,8 +110,7 @@ span {
     /* width: 75%; */
     position: absolute;
     top: 50px;
-    left: 22%;
-    transform: translate(-50%, 0);
+    left: 0;
     border-radius: 0 0 10px 10px;
     background-color: #242475;
     z-index: 1;
@@ -212,10 +210,10 @@ a.inst {
     text-align: center;
 }
 
-.header-info div,
+/* .header-info div,
 .navigationbottom div {
     margin: auto;
-}
+} */
 
 .phn {
     position: relative;
@@ -359,34 +357,48 @@ a.skype:before {
 
 
     .opened {
-        width:50%;
+        width: 50%;
         align-items: center;
     }
 
 
 }
 
-@media screen and (min-width:600px) {
+/* @media screen and (min-width:600px) {
     .email {
         text-align: left;
     }
 
-    .opened {
-        width: 75%;
+    .navigation, .header-info, .mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    .burger {
+        display: none;
+    }
+    
 
-}
+} */
+
+
+
 
 @media screen and (min-width:768px) {
     .wrapper {
-        width: 80%;
+        width: 90%;
+    }
+
+    .email {
+        text-align: left;
     }
 
     .navigationbottom {
         justify-content: space-between;
 
     }
+
     .header-info {
         display: flex;
         flex-direction: row;
@@ -398,10 +410,33 @@ a.skype:before {
 
     }
 
-    /* .burger {
-        display: none; 
-    } */
 
+    nav li {
+        margin-bottom: 0;
+    }
+
+    .mainmenu {
+        margin: 0;
+        display: flex;
+        gap: 30px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .navigation,
+    .header-info, .mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .minw {
+        text-align: start;
+
+    }
+   
 }
 
 @media screen and (min-width:1024px) {
@@ -420,10 +455,7 @@ a.skype:before {
         display: none;
     }
 
-    .opened {
-        width: 75%;
-    }
-
+   
 
     .navigation,
     .header-info {

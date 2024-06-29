@@ -115,7 +115,8 @@ h2 a{
     font-family: "Arial";
 }
 h2:hover a{
-    text-decoration: none;
+    color: #1f1f56;
+    /* text-decoration: none; */
 }
 .popular {
     padding: 30px 0 46px;
@@ -161,7 +162,7 @@ figure{
 }
 
 .examples a {
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 .examples h2 {
@@ -173,7 +174,7 @@ figure{
 }
 
 .examples a:hover {
-   text-decoration: none;
+   text-decoration: underline;
 }
 
 .examples p {
