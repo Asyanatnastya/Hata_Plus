@@ -145,7 +145,7 @@ nav li {
 .navigationbottom {
     display: flex;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 28px;
     row-gap: 30px;
     flex-wrap: wrap;
 }
@@ -179,7 +179,7 @@ a.fb {
 a.tw {
     width: 21px;
     height: 17px;
-    background-position: -14px 0;
+    background-position: -12px -1px;
 }
 
 a.inst {
@@ -293,6 +293,9 @@ a.skype:before {
     background-position: -50px 97px;
 }
 
+.buttoncall {
+    margin: auto;
+}
 
 .buttoncall a {
     display: inline-block;
@@ -309,6 +312,11 @@ a.skype:before {
 
 .buttoncall a:hover {
     background-color: #fd8300;
+}
+
+.examples figure:hover h2 {
+    color: #1f1f56;
+    text-decoration: underline;
 }
 
 .footer-line {
@@ -336,8 +344,9 @@ a.skype:before {
 }
 
 .minw {
-    min-width: 220px;
+    min-width: 219px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .coperate {
@@ -394,10 +403,7 @@ a.skype:before {
         text-align: left;
     }
 
-    .navigationbottom {
-        justify-content: space-between;
-
-    }
+   
 
     .header-info {
         display: flex;
@@ -418,7 +424,7 @@ a.skype:before {
     .mainmenu {
         margin: 0;
         display: flex;
-        gap: 30px;
+        gap: 10px;
     }
 
     .burger {
@@ -468,6 +474,29 @@ a.skype:before {
         text-align: start;
 
     }
+
+    .header-info {
+        position: relative;
+    }
+
+    .header-info::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 51px;
+        background: #e4e4ec;
+        top: calc(50% - 25px);
+        left: 50%;
+    }
+
+    .buttoncall {
+        margin: 0;
+    }
+
+    .navigationbottom {
+        justify-content: space-between;
+
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -489,4 +518,8 @@ a.skype:before {
         margin: 0;
     }
 
+    .navigationbottom {
+        justify-content: space-between;
+
+    }
 }

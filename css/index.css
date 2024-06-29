@@ -80,13 +80,18 @@ nav {
 }
 
 h1 {
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 28px;
     color: #24242b;
     font-size: 20px;
     /* font-size: 30px; */
     font-weight: 700;
     font-family: "Roboto Slab";
+}
+
+h2:hover a {
+    color: #1f1f56;
+    text-decoration: underline;
 }
 
 .mainpart {
@@ -152,6 +157,7 @@ article a:hover {
 }
 
 .examples a {
+    color: #1f1f56;
     text-decoration: none;
 }
 
@@ -164,6 +170,7 @@ article a:hover {
 }
 
 .examples a:hover {
+    color: #1f1f56;
     text-decoration: underline;
 }
 
@@ -185,9 +192,7 @@ figure {
     width: 100%;
 }
 
-figure a:hover h2 {
-    text-decoration: underline;
-}
+
 
 figure a {
     position: absolute;
@@ -299,7 +304,6 @@ aside li:last-child {
 
 aside li:last-child li:last-child a {
     border-radius: 0 0 3px 3px;
-
 }
 
 @media screen and (min-width:600px) {
