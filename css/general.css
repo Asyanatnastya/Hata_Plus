@@ -362,6 +362,7 @@ a.skype:before {
     text-align: center;
 }
 
+
 @media screen and (min-width:425px) {
 
 
@@ -370,28 +371,36 @@ a.skype:before {
         align-items: center;
     }
 
-
-}
-
-/* @media screen and (min-width:600px) {
-    .email {
-        text-align: left;
-    }
-
-    .navigation, .header-info, .mainmenu {
+    .header-info {
         display: flex;
+        justify-content: center;
+        column-gap: 28px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+    }
+
+
+
+@media (min-width: 600px) {
+   
+    .header-info {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-    }
+        align-items: flex-end;
 
-    .burger {
-        display: none;
     }
+   
+
+    .buttoncall {
+        margin: 4px;
+       
+    }   
+   
+
     
-
-} */
-
-
+}
 
 
 @media screen and (min-width:768px) {
